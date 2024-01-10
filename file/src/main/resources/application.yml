@@ -1,0 +1,42 @@
+
+# springdoc-openapi????
+# swagger api??
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.example.file.Controller
+# knife4j???????????????
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+
+ydy:
+  alioss:
+    endpoint: ****
+    accessKeyId: ****
+    accessKeySecret: ****
+    bucketName: ****
+server:
+  port: 10001
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://****:3306/api?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+    username: ****
+    password: ****
+
+minio:
+  accessKey: ****
+  secretKey: ****
+  bucket: ****
+  endpoint: http://****:9000
+  readPath: http://****:9000
