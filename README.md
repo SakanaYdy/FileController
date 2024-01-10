@@ -1,1 +1,2 @@
+这是SpringBoot集成云端文件操作实现的接口服务，实现了OSS以及MinIO两种文件操作方式
 详细接口参数参见api pdf文稿
